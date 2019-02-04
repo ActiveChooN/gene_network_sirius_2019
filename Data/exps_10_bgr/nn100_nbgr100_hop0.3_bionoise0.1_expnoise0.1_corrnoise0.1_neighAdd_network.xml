@@ -1,0 +1,4257 @@
+<GeneNetwork>
+  <Nodes>
+    <Node id="0" name="lon" type="unknown">
+          <InteractionType name="random_0">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.7423043213780541</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="1" name="rpoH" type="unknown">
+          <InteractionType name="random_1">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="NRegulatorsMM">
+                <parameter name="numReg">4</parameter>
+                <parameter name="V0max">0.2</parameter>
+                <parameter name="type">ACTIVATOR</parameter>
+                <parameter name="Vmax">4.0</parameter>
+                <parameter name="Keq">1.1687221558803726</parameter>
+                <parameter name="type">REPRESSOR</parameter>
+                <parameter name="Vmax">0.0</parameter>
+                <parameter name="Keq">0.7453891596736626</parameter>
+                <parameter name="type">REPRESSOR</parameter>
+                <parameter name="Vmax">0.0</parameter>
+                <parameter name="Keq">0.7535186141472288</parameter>
+                <parameter name="type">REPRESSOR</parameter>
+                <parameter name="Vmax">0.0</parameter>
+                <parameter name="Keq">0.4276342067029369</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="2" name="mopA" type="unknown">
+          <InteractionType name="random_2">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.40896006437357746</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="3" name="htpG" type="unknown">
+          <InteractionType name="random_3">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.8905423985621925</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="4" name="rpoE_rseABC" type="external-condition">
+          <InteractionType name="external_4">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.0</parameter>
+            <IProvideMean type="ConstantModel">
+              <constant>0.4133514827117324</constant>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="5" name="ibpAB" type="unknown">
+          <InteractionType name="random_5">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.36232920746074</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="6" name="ecfABC" type="unknown">
+          <InteractionType name="random_6">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.4318339238274473</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="7" name="ecfH" type="unknown">
+          <InteractionType name="random_7">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">3.0</parameter>
+                <parameter name="Kh">0.6603765243738866</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="8" name="fkpA" type="unknown">
+          <InteractionType name="random_8">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.6433942246666221</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="9" name="crp" type="external-condition">
+          <InteractionType name="external_9">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.0</parameter>
+            <IProvideMean type="ConstantModel">
+              <constant>0.3785609013866633</constant>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="10" name="araE" type="unknown">
+          <InteractionType name="random_10">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorOneRepressorComp">
+                <parameter name="V0max">0.1</parameter>
+                <parameter name="V1max">5.0</parameter>
+                <parameter name="Ka">0.7890085924831048</parameter>
+                <parameter name="Ki">1.0753855410801065</parameter>
+                <parameter name="firstIsActivator">true</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="11" name="xprB_dsbC_recJ" type="unknown">
+          <InteractionType name="random_11">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="TwoActivatorsSynergism">
+                <parameter name="V0max">0.1</parameter>
+                <parameter name="V1max">1.0</parameter>
+                <parameter name="V2max">1.0</parameter>
+                <parameter name="K1a">0.4998230797939102</parameter>
+                <parameter name="K2a">0.5834975641361269</parameter>
+                <parameter name="beta">2.0</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="12" name="lpxDA_fabZ" type="unknown">
+          <InteractionType name="random_12">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.44414680634185827</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="13" name="ppiA" type="unknown">
+          <InteractionType name="random_13">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="NRepressorsMM">
+                <parameter name="numReg">2</parameter>
+                <parameter name="V0max">4.0</parameter>
+                <parameter name="Ki">0.7944930831577487</parameter>
+                <parameter name="Ki">0.7842860613238019</parameter>
+              </function>            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="14" name="dnaA" type="external-condition">
+          <InteractionType name="external_14">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.0</parameter>
+            <IProvideMean type="ConstantModel">
+              <constant>0.20487532182596624</constant>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="15" name="ptsHI_crr" type="unknown">
+          <InteractionType name="random_15">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="TwoActivatorsSynergism">
+                <parameter name="V0max">0.1</parameter>
+                <parameter name="V1max">1.0</parameter>
+                <parameter name="V2max">1.0</parameter>
+                <parameter name="K1a">0.5977340649835585</parameter>
+                <parameter name="K2a">1.152463444956764</parameter>
+                <parameter name="beta">2.0</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="16" name="cirA" type="unknown">
+          <InteractionType name="random_16">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorOneRepressorNoComp">
+                <parameter name="V0max">0.1</parameter>
+                <parameter name="V1max">5.0</parameter>
+                <parameter name="Ka">0.47596924460617346</parameter>
+                <parameter name="Ki">0.7909684297965921</parameter>
+                <parameter name="firstIsActivator">true</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="17" name="cyaA" type="unknown">
+          <InteractionType name="random_17">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneRepressorCoop">
+                <parameter name="V0max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.8816480984097309</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="18" name="speC" type="unknown">
+          <InteractionType name="random_18">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneRepressorCoop">
+                <parameter name="V0max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.8497878021686605</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="19" name="araBAD" type="unknown">
+          <InteractionType name="random_19">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="TwoActivatorsSynergism">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">1.0</parameter>
+                <parameter name="V2max">1.0</parameter>
+                <parameter name="K1a">0.3320939426382031</parameter>
+                <parameter name="K2a">0.6181964216904828</parameter>
+                <parameter name="beta">1.0</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="20" name="clpP" type="unknown">
+          <InteractionType name="random_20">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.7680922784701097</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="21" name="nagBACD" type="unknown">
+          <InteractionType name="random_21">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorOneRepressorComp">
+                <parameter name="V0max">0.1</parameter>
+                <parameter name="V1max">5.0</parameter>
+                <parameter name="Ka">0.536169789750888</parameter>
+                <parameter name="Ki">0.5138137486504814</parameter>
+                <parameter name="firstIsActivator">true</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="22" name="araJ" type="unknown">
+          <InteractionType name="random_22">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="TwoActivatorsSynergism">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">1.0</parameter>
+                <parameter name="V2max">1.0</parameter>
+                <parameter name="K1a">1.1881896450572689</parameter>
+                <parameter name="K2a">1.1742338282906426</parameter>
+                <parameter name="beta">1.0</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="23" name="nupG" type="unknown">
+          <InteractionType name="random_23">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="NRepressorsMM">
+                <parameter name="numReg">3</parameter>
+                <parameter name="V0max">4.0</parameter>
+                <parameter name="Ki">0.6295427264384166</parameter>
+                <parameter name="Ki">0.5677727398862019</parameter>
+                <parameter name="Ki">0.8690320773246757</parameter>
+              </function>            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="24" name="ecfK" type="unknown">
+          <InteractionType name="random_24">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.6112720472301336</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="25" name="fur" type="unknown">
+          <InteractionType name="random_25">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorOneRepressorComp">
+                <parameter name="V0max">0.1</parameter>
+                <parameter name="V1max">5.0</parameter>
+                <parameter name="Ka">0.5293454361294795</parameter>
+                <parameter name="Ki">0.4209997603286061</parameter>
+                <parameter name="firstIsActivator">true</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="26" name="yhfA" type="unknown">
+          <InteractionType name="random_26">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneRepressorCoop">
+                <parameter name="V0max">0.5</parameter>
+                <parameter name="Hillconstant">2.0</parameter>
+                <parameter name="Kh">0.522155612057547</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="27" name="srlAEBD_gutM_srlR_gutQ" type="unknown">
+          <InteractionType name="random_27">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorOneRepressorNoComp">
+                <parameter name="V0max">0.1</parameter>
+                <parameter name="V1max">5.0</parameter>
+                <parameter name="Ka">0.5001638727723072</parameter>
+                <parameter name="Ki">0.7084407818927271</parameter>
+                <parameter name="firstIsActivator">true</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="28" name="fucPIKUR" type="unknown">
+          <InteractionType name="random_28">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="TwoActivatorsSynergism">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">1.0</parameter>
+                <parameter name="V2max">1.0</parameter>
+                <parameter name="K1a">0.4860692044655742</parameter>
+                <parameter name="K2a">0.3561648442217909</parameter>
+                <parameter name="beta">1.0</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="29" name="mopB" type="unknown">
+          <InteractionType name="random_29">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.38408142167322046</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="30" name="mglBAC" type="unknown">
+          <InteractionType name="random_30">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.7172840139420674</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="31" name="malK_lamB_malM" type="unknown">
+          <InteractionType name="random_31">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="TwoActivatorsSynergism">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">1.0</parameter>
+                <parameter name="V2max">1.0</parameter>
+                <parameter name="K1a">0.5194440879206539</parameter>
+                <parameter name="K2a">0.703648525153597</parameter>
+                <parameter name="beta">1.0</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="32" name="uppS_cdsA_ecfE" type="unknown">
+          <InteractionType name="random_32">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.48618304695948994</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="33" name="fecIR" type="unknown">
+          <InteractionType name="random_33">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorOneRepressorNoComp">
+                <parameter name="V0max">0.1</parameter>
+                <parameter name="V1max">5.0</parameter>
+                <parameter name="Ka">0.5783608330204225</parameter>
+                <parameter name="Ki">0.9241024037400348</parameter>
+                <parameter name="firstIsActivator">false</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="34" name="sodA" type="unknown">
+          <InteractionType name="random_34">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="NRegulatorsMM">
+                <parameter name="numReg">5</parameter>
+                <parameter name="V0max">0.2</parameter>
+                <parameter name="type">REPRESSOR</parameter>
+                <parameter name="Vmax">0.0</parameter>
+                <parameter name="Keq">0.39392687541235366</parameter>
+                <parameter name="type">REPRESSOR</parameter>
+                <parameter name="Vmax">0.0</parameter>
+                <parameter name="Keq">1.2654869844526389</parameter>
+                <parameter name="type">REPRESSOR</parameter>
+                <parameter name="Vmax">0.0</parameter>
+                <parameter name="Keq">0.3959355760338577</parameter>
+                <parameter name="type">ACTIVATOR</parameter>
+                <parameter name="Vmax">4.0</parameter>
+                <parameter name="Keq">0.15361832896916763</parameter>
+                <parameter name="type">ACTIVATOR</parameter>
+                <parameter name="Vmax">4.0</parameter>
+                <parameter name="Keq">0.6515467347014186</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="35" name="tnaLAB" type="unknown">
+          <InteractionType name="random_35">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">2.0</parameter>
+                <parameter name="Kh">0.6951404242055333</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="36" name="deoCABD" type="unknown">
+          <InteractionType name="random_36">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="NRepressorsMM">
+                <parameter name="numReg">3</parameter>
+                <parameter name="V0max">4.0</parameter>
+                <parameter name="Ki">0.47904183933295813</parameter>
+                <parameter name="Ki">0.4585560381084089</parameter>
+                <parameter name="Ki">0.8665473266812361</parameter>
+              </function>            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="37" name="fepB" type="unknown">
+          <InteractionType name="random_37">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneRepressorCoop">
+                <parameter name="V0max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.5991466865580987</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="38" name="glgS" type="unknown">
+          <InteractionType name="random_38">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">2.0</parameter>
+                <parameter name="Kh">0.9164051584144053</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="39" name="htrA" type="unknown">
+          <InteractionType name="random_39">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="TwoActivatorsSynergism">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">1.0</parameter>
+                <parameter name="V2max">1.0</parameter>
+                <parameter name="K1a">0.6692632068703952</parameter>
+                <parameter name="K2a">0.4996073335955512</parameter>
+                <parameter name="beta">1.0</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="40" name="acs" type="unknown">
+          <InteractionType name="random_40">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="TwoActivatorsSynergism">
+                <parameter name="V0max">0.1</parameter>
+                <parameter name="V1max">1.0</parameter>
+                <parameter name="V2max">1.0</parameter>
+                <parameter name="K1a">0.5527570829811345</parameter>
+                <parameter name="K2a">0.6913726361128354</parameter>
+                <parameter name="beta">2.0</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="41" name="ebgAC" type="unknown">
+          <InteractionType name="random_41">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.4695871107550664</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="42" name="araC" type="unknown">
+          <InteractionType name="random_42">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorOneRepressorComp">
+                <parameter name="V0max">0.1</parameter>
+                <parameter name="V1max">5.0</parameter>
+                <parameter name="Ka">0.6695614386867931</parameter>
+                <parameter name="Ki">0.36811570840069946</parameter>
+                <parameter name="firstIsActivator">true</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="43" name="ansB" type="unknown">
+          <InteractionType name="random_43">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="TwoActivatorsSynergism">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">1.0</parameter>
+                <parameter name="V2max">1.0</parameter>
+                <parameter name="K1a">0.621967994834871</parameter>
+                <parameter name="K2a">0.374571349261515</parameter>
+                <parameter name="beta">1.0</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="44" name="fnr" type="external-condition">
+          <InteractionType name="external_44">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.0</parameter>
+            <IProvideMean type="ConstantModel">
+              <constant>0.846838673343882</constant>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="45" name="himA" type="external-condition">
+          <InteractionType name="external_45">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.0</parameter>
+            <IProvideMean type="ConstantModel">
+              <constant>0.67846699221991</constant>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="46" name="cytR" type="external-condition">
+          <InteractionType name="external_46">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.0</parameter>
+            <IProvideMean type="ConstantModel">
+              <constant>0.4427269659936428</constant>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="47" name="narK" type="unknown">
+          <InteractionType name="random_47">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+<IProvideMean>
+  <function name="NActivatorsMM">
+    <parameter name="numReg">3</parameter>
+    <parameter name="V0max">0.0</parameter>
+    <parameter name="Vmax">2.0</parameter>
+    <parameter name="Ka">0.6894947139415202</parameter>
+    <parameter name="Vmax">2.0</parameter>
+    <parameter name="Ka">0.7298801997245942</parameter>
+    <parameter name="Vmax">2.0</parameter>
+    <parameter name="Ka">0.4191380365994896</parameter>
+  </function>
+</IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="48" name="gntKU" type="unknown">
+          <InteractionType name="random_48">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.563161219993989</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="49" name="ivbL_ilvBN" type="unknown">
+          <InteractionType name="random_49">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.4314832142533118</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="50" name="icdA" type="unknown">
+          <InteractionType name="random_50">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="NRegulatorsMM">
+                <parameter name="numReg">3</parameter>
+                <parameter name="V0max">0.2</parameter>
+                <parameter name="type">REPRESSOR</parameter>
+                <parameter name="Vmax">0.0</parameter>
+                <parameter name="Keq">0.34432212853135513</parameter>
+                <parameter name="type">REPRESSOR</parameter>
+                <parameter name="Vmax">0.0</parameter>
+                <parameter name="Keq">0.6878195069964115</parameter>
+                <parameter name="type">ACTIVATOR</parameter>
+                <parameter name="Vmax">4.0</parameter>
+                <parameter name="Keq">0.6741131654629688</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="51" name="hflB" type="unknown">
+          <InteractionType name="random_51">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.8826344216552577</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="52" name="arcA" type="unknown">
+          <InteractionType name="random_52">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.6554237031517336</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="53" name="fhuACDB" type="unknown">
+          <InteractionType name="random_53">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneRepressorCoop">
+                <parameter name="V0max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.36096099545388294</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="54" name="frdABCD" type="unknown">
+          <InteractionType name="random_54">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="NRegulatorsMM">
+                <parameter name="numReg">3</parameter>
+                <parameter name="V0max">0.2</parameter>
+                <parameter name="type">ACTIVATOR</parameter>
+                <parameter name="Vmax">4.0</parameter>
+                <parameter name="Keq">0.6502854871258915</parameter>
+                <parameter name="type">REPRESSOR</parameter>
+                <parameter name="Vmax">0.0</parameter>
+                <parameter name="Keq">1.0280017864273185</parameter>
+                <parameter name="type">ACTIVATOR</parameter>
+                <parameter name="Vmax">4.0</parameter>
+                <parameter name="Keq">0.3791369554417179</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="55" name="ecfD" type="unknown">
+          <InteractionType name="random_55">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.6812517346886282</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="56" name="malEFG" type="unknown">
+          <InteractionType name="random_56">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="TwoActivatorsSynergism">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">1.0</parameter>
+                <parameter name="V2max">1.0</parameter>
+                <parameter name="K1a">0.8246316307962548</parameter>
+                <parameter name="K2a">0.6197366465890328</parameter>
+                <parameter name="beta">1.0</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="57" name="narL" type="external-condition">
+          <InteractionType name="external_57">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.0</parameter>
+            <IProvideMean type="ConstantModel">
+              <constant>0.6708200436551124</constant>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="58" name="appY" type="unknown">
+          <InteractionType name="random_58">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">1.3760414665346687</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="59" name="dcuB_fumB" type="unknown">
+          <InteractionType name="random_59">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="NRegulatorsMM">
+                <parameter name="numReg">4</parameter>
+                <parameter name="V0max">0.2</parameter>
+                <parameter name="type">REPRESSOR</parameter>
+                <parameter name="Vmax">0.0</parameter>
+                <parameter name="Keq">0.8469009079765293</parameter>
+                <parameter name="type">ACTIVATOR</parameter>
+                <parameter name="Vmax">4.0</parameter>
+                <parameter name="Keq">0.7209108089105125</parameter>
+                <parameter name="type">REPRESSOR</parameter>
+                <parameter name="Vmax">0.0</parameter>
+                <parameter name="Keq">1.2818532264636717</parameter>
+                <parameter name="type">ACTIVATOR</parameter>
+                <parameter name="Vmax">4.0</parameter>
+                <parameter name="Keq">0.3853600252250722</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="60" name="focA_pflB" type="unknown">
+          <InteractionType name="random_60">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="NRegulatorsMM">
+                <parameter name="numReg">5</parameter>
+                <parameter name="V0max">0.2</parameter>
+                <parameter name="type">ACTIVATOR</parameter>
+                <parameter name="Vmax">4.0</parameter>
+                <parameter name="Keq">0.5565331826267519</parameter>
+                <parameter name="type">ACTIVATOR</parameter>
+                <parameter name="Vmax">4.0</parameter>
+                <parameter name="Keq">0.6778647252889464</parameter>
+                <parameter name="type">ACTIVATOR</parameter>
+                <parameter name="Vmax">4.0</parameter>
+                <parameter name="Keq">0.9396405254759718</parameter>
+                <parameter name="type">ACTIVATOR</parameter>
+                <parameter name="Vmax">4.0</parameter>
+                <parameter name="Keq">0.8906867071361241</parameter>
+                <parameter name="type">REPRESSOR</parameter>
+                <parameter name="Vmax">0.0</parameter>
+                <parameter name="Keq">0.5913415285242306</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="61" name="ecfG" type="unknown">
+          <InteractionType name="random_61">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">2.0</parameter>
+                <parameter name="Kh">0.4833115064493252</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="62" name="melAB" type="unknown">
+          <InteractionType name="random_62">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.574185620237008</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="63" name="tdcABCDEFG" type="unknown">
+          <InteractionType name="random_63">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+<IProvideMean>
+  <function name="NActivatorsMM">
+    <parameter name="numReg">4</parameter>
+    <parameter name="V0max">0.0</parameter>
+    <parameter name="Vmax">2.0</parameter>
+    <parameter name="Ka">0.4192332316624433</parameter>
+    <parameter name="Vmax">2.0</parameter>
+    <parameter name="Ka">0.7436931377896316</parameter>
+    <parameter name="Vmax">2.0</parameter>
+    <parameter name="Ka">0.9793153533373843</parameter>
+    <parameter name="Vmax">2.0</parameter>
+    <parameter name="Ka">0.4131571974354724</parameter>
+  </function>
+</IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="64" name="gltA" type="unknown">
+          <InteractionType name="random_64">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorOneRepressorComp">
+                <parameter name="V0max">0.1</parameter>
+                <parameter name="V1max">5.0</parameter>
+                <parameter name="Ka">0.6662518359675009</parameter>
+                <parameter name="Ki">0.48334125165332076</parameter>
+                <parameter name="firstIsActivator">true</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="65" name="fixABCX" type="unknown">
+          <InteractionType name="random_65">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="TwoActivatorsSynergism">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">1.0</parameter>
+                <parameter name="V2max">1.0</parameter>
+                <parameter name="K1a">0.5051172040234961</parameter>
+                <parameter name="K2a">0.8849139073839889</parameter>
+                <parameter name="beta">1.0</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="66" name="hypABCDE" type="unknown">
+          <InteractionType name="random_66">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="TwoActivatorsSynergism">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">1.0</parameter>
+                <parameter name="V2max">1.0</parameter>
+                <parameter name="K1a">1.409712177238045</parameter>
+                <parameter name="K2a">0.8350280453541343</parameter>
+                <parameter name="beta">1.0</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="67" name="fucAO" type="unknown">
+          <InteractionType name="random_67">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="TwoActivatorsSynergism">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">1.0</parameter>
+                <parameter name="V2max">1.0</parameter>
+                <parameter name="K1a">0.5251586905793197</parameter>
+                <parameter name="K2a">0.3901734055774246</parameter>
+                <parameter name="beta">1.0</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="68" name="nuoABCEFGHIJKLMN" type="unknown">
+          <InteractionType name="random_68">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="NRegulatorsMM">
+                <parameter name="numReg">4</parameter>
+                <parameter name="V0max">0.2</parameter>
+                <parameter name="type">REPRESSOR</parameter>
+                <parameter name="Vmax">0.0</parameter>
+                <parameter name="Keq">0.8424550149717328</parameter>
+                <parameter name="type">REPRESSOR</parameter>
+                <parameter name="Vmax">0.0</parameter>
+                <parameter name="Keq">0.8892203409333361</parameter>
+                <parameter name="type">REPRESSOR</parameter>
+                <parameter name="Vmax">0.0</parameter>
+                <parameter name="Keq">0.6990116748671933</parameter>
+                <parameter name="type">ACTIVATOR</parameter>
+                <parameter name="Vmax">4.0</parameter>
+                <parameter name="Keq">0.4663788413003189</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="69" name="aceBAK" type="unknown">
+          <InteractionType name="random_69">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="NRegulatorsMM">
+                <parameter name="numReg">3</parameter>
+                <parameter name="V0max">0.2</parameter>
+                <parameter name="type">ACTIVATOR</parameter>
+                <parameter name="Vmax">4.0</parameter>
+                <parameter name="Keq">0.8245838797847935</parameter>
+                <parameter name="type">REPRESSOR</parameter>
+                <parameter name="Vmax">0.0</parameter>
+                <parameter name="Keq">0.7753595724090969</parameter>
+                <parameter name="type">REPRESSOR</parameter>
+                <parameter name="Vmax">0.0</parameter>
+                <parameter name="Keq">0.48590058470040526</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="70" name="caiTABCDE" type="unknown">
+          <InteractionType name="random_70">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="NRegulatorsMM">
+                <parameter name="numReg">3</parameter>
+                <parameter name="V0max">0.2</parameter>
+                <parameter name="type">ACTIVATOR</parameter>
+                <parameter name="Vmax">4.0</parameter>
+                <parameter name="Keq">0.4726136228451231</parameter>
+                <parameter name="type">REPRESSOR</parameter>
+                <parameter name="Vmax">0.0</parameter>
+                <parameter name="Keq">0.9251862911506872</parameter>
+                <parameter name="type">ACTIVATOR</parameter>
+                <parameter name="Vmax">4.0</parameter>
+                <parameter name="Keq">0.8288932375458005</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="71" name="malT" type="unknown">
+          <InteractionType name="random_71">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.2405314765345823</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="72" name="nrfABCDEFG" type="unknown">
+          <InteractionType name="random_72">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.8738777412245036</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="73" name="tsx" type="unknown">
+          <InteractionType name="random_73">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="NRegulatorsMM">
+                <parameter name="numReg">3</parameter>
+                <parameter name="V0max">0.2</parameter>
+                <parameter name="type">REPRESSOR</parameter>
+                <parameter name="Vmax">0.0</parameter>
+                <parameter name="Keq">0.581888438007863</parameter>
+                <parameter name="type">ACTIVATOR</parameter>
+                <parameter name="Vmax">4.0</parameter>
+                <parameter name="Keq">0.6942932010573948</parameter>
+                <parameter name="type">REPRESSOR</parameter>
+                <parameter name="Vmax">0.0</parameter>
+                <parameter name="Keq">0.6564324203326071</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="74" name="gntT" type="unknown">
+          <InteractionType name="random_74">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.7732502786198202</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="75" name="cydAB" type="unknown">
+          <InteractionType name="random_75">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorOneRepressorComp">
+                <parameter name="V0max">0.1</parameter>
+                <parameter name="V1max">5.0</parameter>
+                <parameter name="Ka">0.9610633383723544</parameter>
+                <parameter name="Ki">1.0959447146486676</parameter>
+                <parameter name="firstIsActivator">false</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="76" name="manXYZ" type="unknown">
+          <InteractionType name="random_76">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorOneRepressorComp">
+                <parameter name="V0max">0.1</parameter>
+                <parameter name="V1max">5.0</parameter>
+                <parameter name="Ka">0.799506555371447</parameter>
+                <parameter name="Ki">0.8181360207958706</parameter>
+                <parameter name="firstIsActivator">true</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="77" name="appCBA" type="unknown">
+          <InteractionType name="random_77">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="TwoActivatorsSynergism">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">1.0</parameter>
+                <parameter name="V2max">1.0</parameter>
+                <parameter name="K1a">0.5321609815324998</parameter>
+                <parameter name="K2a">0.49585784907467384</parameter>
+                <parameter name="beta">1.0</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="78" name="ompC" type="unknown">
+          <InteractionType name="random_78">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneRepressorCoop">
+                <parameter name="V0max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.39085863880303373</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="79" name="yjdHG" type="external-condition">
+          <InteractionType name="external_79">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.0</parameter>
+            <IProvideMean type="ConstantModel">
+              <constant>0.4976193569600582</constant>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="80" name="cpxAR" type="external-condition">
+          <InteractionType name="external_80">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.0</parameter>
+            <IProvideMean type="ConstantModel">
+              <constant>0.510454885661602</constant>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="81" name="htpY" type="unknown">
+          <InteractionType name="random_81">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.5949626290959248</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="82" name="malI" type="unknown">
+          <InteractionType name="random_82">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="NRepressorsMM">
+                <parameter name="numReg">2</parameter>
+                <parameter name="V0max">4.0</parameter>
+                <parameter name="Ki">0.5833943865246327</parameter>
+                <parameter name="Ki">0.6795361664262741</parameter>
+              </function>            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="83" name="dnaKJ" type="unknown">
+          <InteractionType name="random_83">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.5693480745055804</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="84" name="malS" type="unknown">
+          <InteractionType name="random_84">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="TwoActivatorsSynergism">
+                <parameter name="V0max">0.1</parameter>
+                <parameter name="V1max">1.0</parameter>
+                <parameter name="V2max">1.0</parameter>
+                <parameter name="K1a">0.639733070164552</parameter>
+                <parameter name="K2a">0.49508123754141203</parameter>
+                <parameter name="beta">2.0</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="85" name="grpE" type="unknown">
+          <InteractionType name="random_85">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.8454995927766472</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="86" name="deoR" type="external-condition">
+          <InteractionType name="external_86">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.0</parameter>
+            <IProvideMean type="ConstantModel">
+              <constant>0.21677661128342152</constant>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="87" name="pspABCDE" type="unknown">
+          <InteractionType name="random_87">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.5768089818846414</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="88" name="sdhCDAB_b0725_sucABCD" type="unknown">
+          <InteractionType name="random_88">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="NRegulatorsMM">
+                <parameter name="numReg">3</parameter>
+                <parameter name="V0max">0.2</parameter>
+                <parameter name="type">ACTIVATOR</parameter>
+                <parameter name="Vmax">4.0</parameter>
+                <parameter name="Keq">0.6318337696156445</parameter>
+                <parameter name="type">REPRESSOR</parameter>
+                <parameter name="Vmax">0.0</parameter>
+                <parameter name="Keq">0.8664484117783365</parameter>
+                <parameter name="type">REPRESSOR</parameter>
+                <parameter name="Vmax">0.0</parameter>
+                <parameter name="Keq">0.7283138276407293</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="89" name="dmsABC" type="unknown">
+          <InteractionType name="random_89">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorOneRepressorComp">
+                <parameter name="V0max">0.1</parameter>
+                <parameter name="V1max">5.0</parameter>
+                <parameter name="Ka">0.30050018460655253</parameter>
+                <parameter name="Ki">0.8234194077089099</parameter>
+                <parameter name="firstIsActivator">true</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="90" name="ostA_surA_pdxA" type="unknown">
+          <InteractionType name="random_90">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.5253620060639981</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="91" name="FruR" type="external-condition">
+          <InteractionType name="external_91">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.0</parameter>
+            <IProvideMean type="ConstantModel">
+              <constant>0.29376126849092543</constant>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="92" name="marRAB" type="external-condition">
+          <InteractionType name="external_92">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.0</parameter>
+            <IProvideMean type="ConstantModel">
+              <constant>0.5592805503401905</constant>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="93" name="cyoABCDE" type="unknown">
+          <InteractionType name="random_93">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="NRepressorsMM">
+                <parameter name="numReg">2</parameter>
+                <parameter name="V0max">4.0</parameter>
+                <parameter name="Ki">0.4334751975483395</parameter>
+                <parameter name="Ki">0.8027285412106417</parameter>
+              </function>            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="94" name="tonB" type="unknown">
+          <InteractionType name="random_94">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneRepressorCoop">
+                <parameter name="V0max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.5152245958087901</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="95" name="soxS" type="external-condition">
+          <InteractionType name="external_95">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.0</parameter>
+            <IProvideMean type="ConstantModel">
+              <constant>0.38035321491770446</constant>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="96" name="nfo" type="unknown">
+          <InteractionType name="random_96">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="TwoActivatorsSynergism">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">1.0</parameter>
+                <parameter name="V2max">1.0</parameter>
+                <parameter name="K1a">0.5304456530915624</parameter>
+                <parameter name="K2a">0.4056579302593588</parameter>
+                <parameter name="beta">1.0</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="97" name="rpoD" type="unknown">
+          <InteractionType name="random_97">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.7843340213658087</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="98" name="uhpT" type="unknown">
+          <InteractionType name="random_98">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.5779303901219014</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="99" name="caiF" type="unknown">
+          <InteractionType name="random_99">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="NRegulatorsMM">
+                <parameter name="numReg">3</parameter>
+                <parameter name="V0max">0.2</parameter>
+                <parameter name="type">ACTIVATOR</parameter>
+                <parameter name="Vmax">4.0</parameter>
+                <parameter name="Keq">1.0468317709673312</parameter>
+                <parameter name="type">ACTIVATOR</parameter>
+                <parameter name="Vmax">4.0</parameter>
+                <parameter name="Keq">0.915594328680427</parameter>
+                <parameter name="type">REPRESSOR</parameter>
+                <parameter name="Vmax">0.0</parameter>
+                <parameter name="Keq">0.7253280754433683</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="100" name="bgr_oxyR" type="unknown">
+          <InteractionType name="random_100">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean type="ConstantModel">
+              <constant>0.6221121011767536</constant>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="101" name="bgr_gorA" type="unknown">
+          <InteractionType name="random_101">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">1.0561826115900452</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="102" name="bgr_katG" type="unknown">
+          <InteractionType name="random_102">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="TwoActivatorsSynergism">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">1.0</parameter>
+                <parameter name="V2max">1.0</parameter>
+                <parameter name="K1a">0.8582261533099311</parameter>
+                <parameter name="K2a">1.1469071205870671</parameter>
+                <parameter name="beta">1.0</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="103" name="bgr_nlpD_rpoS" type="unknown">
+          <InteractionType name="random_103">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean type="ConstantModel">
+              <constant>0.9646319961175323</constant>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="104" name="bgr_ahpCF" type="unknown">
+          <InteractionType name="random_104">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.6787069916724972</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="105" name="bgr_dps" type="unknown">
+          <InteractionType name="random_105">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+<IProvideMean>
+  <function name="NActivatorsMM">
+    <parameter name="numReg">3</parameter>
+    <parameter name="V0max">0.0</parameter>
+    <parameter name="Vmax">2.0</parameter>
+    <parameter name="Ka">0.33121553798199715</parameter>
+    <parameter name="Vmax">2.0</parameter>
+    <parameter name="Ka">0.7713156301569309</parameter>
+    <parameter name="Vmax">2.0</parameter>
+    <parameter name="Ka">0.5615109752145506</parameter>
+  </function>
+</IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="106" name="bgr_himA" type="unknown">
+          <InteractionType name="random_106">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean type="ConstantModel">
+              <constant>0.6377196805551648</constant>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="107" name="bgr_proP" type="unknown">
+          <InteractionType name="random_107">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="NRegulatorsMM">
+                <parameter name="numReg">3</parameter>
+                <parameter name="V0max">0.2</parameter>
+                <parameter name="type">ACTIVATOR</parameter>
+                <parameter name="Vmax">4.0</parameter>
+                <parameter name="Keq">0.5119335864232955</parameter>
+                <parameter name="type">ACTIVATOR</parameter>
+                <parameter name="Vmax">4.0</parameter>
+                <parameter name="Keq">0.42912921342642035</parameter>
+                <parameter name="type">REPRESSOR</parameter>
+                <parameter name="Vmax">0.0</parameter>
+                <parameter name="Keq">0.7813558350871052</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="108" name="bgr_crp" type="unknown">
+          <InteractionType name="random_108">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean type="ConstantModel">
+              <constant>0.6796074225567281</constant>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="109" name="bgr_yhdG_fis" type="unknown">
+          <InteractionType name="random_109">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean type="ConstantModel">
+              <constant>0.6794910579919815</constant>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="110" name="bgr_osmY" type="unknown">
+          <InteractionType name="random_110">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneRepressorCoop">
+                <parameter name="V0max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">1.1970428598790017</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="111" name="bgr_osmC" type="unknown">
+          <InteractionType name="random_111">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="NRepressorsMM">
+                <parameter name="numReg">2</parameter>
+                <parameter name="V0max">4.0</parameter>
+                <parameter name="Ki">0.9147490777592033</parameter>
+                <parameter name="Ki">0.36863505242553096</parameter>
+              </function>            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="112" name="bgr_hns" type="unknown">
+          <InteractionType name="random_112">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneRepressorCoop">
+                <parameter name="V0max">0.5</parameter>
+                <parameter name="Hillconstant">3.0</parameter>
+                <parameter name="Kh">0.5900717955914504</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="113" name="bgr_acs" type="unknown">
+          <InteractionType name="random_113">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="NRegulatorsMM">
+                <parameter name="numReg">3</parameter>
+                <parameter name="V0max">0.2</parameter>
+                <parameter name="type">REPRESSOR</parameter>
+                <parameter name="Vmax">0.0</parameter>
+                <parameter name="Keq">0.6229949112037325</parameter>
+                <parameter name="type">ACTIVATOR</parameter>
+                <parameter name="Vmax">4.0</parameter>
+                <parameter name="Keq">1.5811256854331452</parameter>
+                <parameter name="type">ACTIVATOR</parameter>
+                <parameter name="Vmax">4.0</parameter>
+                <parameter name="Keq">0.9619306217486718</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="114" name="bgr_fnr" type="unknown">
+          <InteractionType name="random_114">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean type="ConstantModel">
+              <constant>0.12518274574540555</constant>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="115" name="bgr_fur" type="unknown">
+          <InteractionType name="random_115">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.5342076816478901</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="116" name="bgr_cspA" type="unknown">
+          <InteractionType name="random_116">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean type="ConstantModel">
+              <constant>0.5297610324341804</constant>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="117" name="bgr_rhaBAD" type="unknown">
+          <InteractionType name="random_117">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="TwoActivatorsSynergism">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">1.0</parameter>
+                <parameter name="V2max">1.0</parameter>
+                <parameter name="K1a">0.6594279752425709</parameter>
+                <parameter name="K2a">0.39204386548735637</parameter>
+                <parameter name="beta">1.0</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="118" name="bgr_rhaSR" type="unknown">
+          <InteractionType name="random_118">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean type="ConstantModel">
+              <constant>0.6408610898070037</constant>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="119" name="bgr_araE" type="unknown">
+          <InteractionType name="random_119">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneRepressorCoop">
+                <parameter name="V0max">0.5</parameter>
+                <parameter name="Hillconstant">3.0</parameter>
+                <parameter name="Kh">0.5318081329458845</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="120" name="bgr_nagE" type="unknown">
+          <InteractionType name="random_120">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">3.0</parameter>
+                <parameter name="Kh">0.6495794716589904</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="121" name="bgr_rpoH" type="unknown">
+          <InteractionType name="random_121">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="NRegulatorsMM">
+                <parameter name="numReg">3</parameter>
+                <parameter name="V0max">0.2</parameter>
+                <parameter name="type">REPRESSOR</parameter>
+                <parameter name="Vmax">0.0</parameter>
+                <parameter name="Keq">0.683912136577355</parameter>
+                <parameter name="type">ACTIVATOR</parameter>
+                <parameter name="Vmax">4.0</parameter>
+                <parameter name="Keq">0.5864854457904619</parameter>
+                <parameter name="type">ACTIVATOR</parameter>
+                <parameter name="Vmax">4.0</parameter>
+                <parameter name="Keq">0.5532304370176085</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="122" name="bgr_dnaA" type="unknown">
+          <InteractionType name="random_122">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean type="ConstantModel">
+              <constant>0.3392553518060595</constant>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="123" name="bgr_cytR" type="unknown">
+          <InteractionType name="random_123">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean type="ConstantModel">
+              <constant>0.8696129019372165</constant>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="124" name="bgr_tonB" type="unknown">
+          <InteractionType name="random_124">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneRepressorCoop">
+                <parameter name="V0max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.8833582648786001</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="125" name="bgr_mopA" type="unknown">
+          <InteractionType name="random_125">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">2.0</parameter>
+                <parameter name="Kh">0.5677949128711252</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="126" name="bgr_gltA" type="unknown">
+          <InteractionType name="random_126">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.8540624244846332</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="127" name="bgr_speC" type="unknown">
+          <InteractionType name="random_127">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.6411799029817877</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="128" name="bgr_fucAO" type="unknown">
+          <InteractionType name="random_128">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.8513384741328214</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="129" name="bgr_nupG" type="unknown">
+          <InteractionType name="random_129">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+<IProvideMean>
+  <function name="NActivatorsMM">
+    <parameter name="numReg">3</parameter>
+    <parameter name="V0max">0.0</parameter>
+    <parameter name="Vmax">2.0</parameter>
+    <parameter name="Ka">0.30460497993188085</parameter>
+    <parameter name="Vmax">2.0</parameter>
+    <parameter name="Ka">0.6125294246750056</parameter>
+    <parameter name="Vmax">2.0</parameter>
+    <parameter name="Ka">0.4619505157170504</parameter>
+  </function>
+</IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="130" name="bgr_deoR" type="unknown">
+          <InteractionType name="random_130">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean type="ConstantModel">
+              <constant>0.5069210806395859</constant>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="131" name="bgr_malXY" type="unknown">
+          <InteractionType name="random_131">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">1.013765069128767</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="132" name="bgr_fliAZY" type="unknown">
+          <InteractionType name="random_132">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="NRepressorsMM">
+                <parameter name="numReg">2</parameter>
+                <parameter name="V0max">4.0</parameter>
+                <parameter name="Ki">0.656937286656939</parameter>
+                <parameter name="Ki">0.6748823225290392</parameter>
+              </function>            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="133" name="bgr_flhDC" type="unknown">
+          <InteractionType name="random_133">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorOneRepressorComp">
+                <parameter name="V0max">0.1</parameter>
+                <parameter name="V1max">5.0</parameter>
+                <parameter name="Ka">0.8746576938458829</parameter>
+                <parameter name="Ki">0.8154448449450237</parameter>
+                <parameter name="firstIsActivator">true</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="134" name="bgr_lacZYA" type="unknown">
+          <InteractionType name="random_134">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="NRepressorsMM">
+                <parameter name="numReg">2</parameter>
+                <parameter name="V0max">4.0</parameter>
+                <parameter name="Ki">0.749545649243585</parameter>
+                <parameter name="Ki">0.5086886509396921</parameter>
+              </function>            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="135" name="bgr_lacI" type="unknown">
+          <InteractionType name="random_135">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean type="ConstantModel">
+              <constant>0.539883830351755</constant>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="136" name="bgr_caiTABCDE" type="unknown">
+          <InteractionType name="random_136">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="NRepressorsMM">
+                <parameter name="numReg">2</parameter>
+                <parameter name="V0max">4.0</parameter>
+                <parameter name="Ki">0.4585181813771875</parameter>
+                <parameter name="Ki">0.42385185318805596</parameter>
+              </function>            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="137" name="bgr_caiF" type="unknown">
+          <InteractionType name="random_137">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="NRegulatorsMM">
+                <parameter name="numReg">4</parameter>
+                <parameter name="V0max">0.2</parameter>
+                <parameter name="type">ACTIVATOR</parameter>
+                <parameter name="Vmax">4.0</parameter>
+                <parameter name="Keq">1.3688377652058172</parameter>
+                <parameter name="type">REPRESSOR</parameter>
+                <parameter name="Vmax">0.0</parameter>
+                <parameter name="Keq">0.503614416091683</parameter>
+                <parameter name="type">REPRESSOR</parameter>
+                <parameter name="Vmax">0.0</parameter>
+                <parameter name="Keq">0.6436568391149728</parameter>
+                <parameter name="type">REPRESSOR</parameter>
+                <parameter name="Vmax">0.0</parameter>
+                <parameter name="Keq">0.6998339313044878</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="138" name="bgr_narL" type="unknown">
+          <InteractionType name="random_138">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean type="ConstantModel">
+              <constant>0.37829764443449676</constant>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="139" name="bgr_malEFG" type="unknown">
+          <InteractionType name="random_139">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneRepressorCoop">
+                <parameter name="V0max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.7079513212871595</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="140" name="bgr_manXYZ" type="unknown">
+          <InteractionType name="random_140">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorOneRepressorNoComp">
+                <parameter name="V0max">0.1</parameter>
+                <parameter name="V1max">5.0</parameter>
+                <parameter name="Ka">0.3600430133803071</parameter>
+                <parameter name="Ki">0.7349970786529915</parameter>
+                <parameter name="firstIsActivator">false</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="141" name="bgr_mlc" type="unknown">
+          <InteractionType name="random_141">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean type="ConstantModel">
+              <constant>0.9284090728033334</constant>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="142" name="bgr_pdhR_aceEF_lpdA" type="unknown">
+          <InteractionType name="random_142">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">3.0</parameter>
+                <parameter name="Kh">0.7028014151817489</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="143" name="bgr_proK" type="unknown">
+          <InteractionType name="random_143">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneRepressorCoop">
+                <parameter name="V0max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.5101336220762397</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="144" name="bgr_ansB" type="unknown">
+          <InteractionType name="random_144">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="NRepressorsMM">
+                <parameter name="numReg">2</parameter>
+                <parameter name="V0max">4.0</parameter>
+                <parameter name="Ki">1.0542412131747507</parameter>
+                <parameter name="Ki">0.444609350861543</parameter>
+              </function>            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="145" name="bgr_valUXY_lysV" type="unknown">
+          <InteractionType name="random_145">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneRepressorCoop">
+                <parameter name="V0max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.5212324136314322</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="146" name="bgr_pheU" type="unknown">
+          <InteractionType name="random_146">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">4.0</parameter>
+                <parameter name="Kh">0.5507483389700844</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="147" name="bgr_cyaA" type="unknown">
+          <InteractionType name="random_147">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.36767599838117754</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="148" name="bgr_proL" type="unknown">
+          <InteractionType name="random_148">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.5496817660263396</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="149" name="bgr_pheV" type="unknown">
+          <InteractionType name="random_149">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneRepressorCoop">
+                <parameter name="V0max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.8943927118636108</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="150" name="bgr_flgBCDEFGHIJK" type="unknown">
+          <InteractionType name="random_150">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneRepressorCoop">
+                <parameter name="V0max">0.5</parameter>
+                <parameter name="Hillconstant">2.0</parameter>
+                <parameter name="Kh">0.9590899395965612</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="151" name="bgr_ubiG" type="unknown">
+          <InteractionType name="random_151">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneRepressorCoop">
+                <parameter name="V0max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.6215599511458985</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="152" name="bgr_araJ" type="unknown">
+          <InteractionType name="random_152">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneRepressorCoop">
+                <parameter name="V0max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.7055989907921857</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="153" name="bgr_ibpAB" type="unknown">
+          <InteractionType name="random_153">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">2.0</parameter>
+                <parameter name="Kh">0.6291154473637579</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="154" name="bgr_gntKU" type="unknown">
+          <InteractionType name="random_154">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorOneRepressorComp">
+                <parameter name="V0max">0.1</parameter>
+                <parameter name="V1max">5.0</parameter>
+                <parameter name="Ka">0.7748930589838675</parameter>
+                <parameter name="Ki">0.7467944151460183</parameter>
+                <parameter name="firstIsActivator">true</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="155" name="bgr_gntR" type="unknown">
+          <InteractionType name="random_155">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean type="ConstantModel">
+              <constant>0.2313424029853195</constant>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="156" name="bgr_sdhCDAB_b0725_sucABCD" type="unknown">
+          <InteractionType name="random_156">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="NRegulatorsMM">
+                <parameter name="numReg">3</parameter>
+                <parameter name="V0max">0.2</parameter>
+                <parameter name="type">REPRESSOR</parameter>
+                <parameter name="Vmax">0.0</parameter>
+                <parameter name="Keq">0.775845016937416</parameter>
+                <parameter name="type">REPRESSOR</parameter>
+                <parameter name="Vmax">0.0</parameter>
+                <parameter name="Keq">0.36799782602318065</parameter>
+                <parameter name="type">ACTIVATOR</parameter>
+                <parameter name="Vmax">4.0</parameter>
+                <parameter name="Keq">0.4534321733097944</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="157" name="bgr_tsx" type="unknown">
+          <InteractionType name="random_157">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="NRegulatorsMM">
+                <parameter name="numReg">3</parameter>
+                <parameter name="V0max">0.2</parameter>
+                <parameter name="type">REPRESSOR</parameter>
+                <parameter name="Vmax">0.0</parameter>
+                <parameter name="Keq">0.5617915073491211</parameter>
+                <parameter name="type">REPRESSOR</parameter>
+                <parameter name="Vmax">0.0</parameter>
+                <parameter name="Keq">0.7098693613124738</parameter>
+                <parameter name="type">ACTIVATOR</parameter>
+                <parameter name="Vmax">4.0</parameter>
+                <parameter name="Keq">1.0561650000594194</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="158" name="bgr_fhuACDB" type="unknown">
+          <InteractionType name="random_158">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.4570903101235331</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="159" name="bgr_aldB" type="unknown">
+          <InteractionType name="random_159">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="NRegulatorsMM">
+                <parameter name="numReg">3</parameter>
+                <parameter name="V0max">0.2</parameter>
+                <parameter name="type">ACTIVATOR</parameter>
+                <parameter name="Vmax">4.0</parameter>
+                <parameter name="Keq">0.879188739777273</parameter>
+                <parameter name="type">ACTIVATOR</parameter>
+                <parameter name="Vmax">4.0</parameter>
+                <parameter name="Keq">1.0260146910400387</parameter>
+                <parameter name="type">REPRESSOR</parameter>
+                <parameter name="Vmax">0.0</parameter>
+                <parameter name="Keq">0.7604995682747344</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="160" name="bgr_rhaT" type="unknown">
+          <InteractionType name="random_160">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorOneRepressorNoComp">
+                <parameter name="V0max">0.1</parameter>
+                <parameter name="V1max">5.0</parameter>
+                <parameter name="Ka">0.651591868420068</parameter>
+                <parameter name="Ki">0.5473664716334418</parameter>
+                <parameter name="firstIsActivator">false</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="161" name="bgr_fucPIKUR" type="unknown">
+          <InteractionType name="random_161">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneRepressorCoop">
+                <parameter name="V0max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.7265150425787954</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="162" name="bgr_glgS" type="unknown">
+          <InteractionType name="random_162">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneRepressorCoop">
+                <parameter name="V0max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.272011484839289</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="163" name="bgr_fliFGHIJK" type="unknown">
+          <InteractionType name="random_163">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneRepressorCoop">
+                <parameter name="V0max">0.5</parameter>
+                <parameter name="Hillconstant">2.0</parameter>
+                <parameter name="Kh">0.822043475746487</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="164" name="bgr_mopB" type="unknown">
+          <InteractionType name="random_164">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.45561822343292663</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="165" name="bgr_malT" type="unknown">
+          <InteractionType name="random_165">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="TwoActivatorsSynergism">
+                <parameter name="V0max">0.1</parameter>
+                <parameter name="V1max">1.0</parameter>
+                <parameter name="V2max">1.0</parameter>
+                <parameter name="K1a">1.0023028239632348</parameter>
+                <parameter name="K2a">0.37903850199504907</parameter>
+                <parameter name="beta">3.0</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="166" name="bgr_hypABCDE" type="unknown">
+          <InteractionType name="random_166">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="NRepressorsMM">
+                <parameter name="numReg">2</parameter>
+                <parameter name="V0max">4.0</parameter>
+                <parameter name="Ki">0.3874214895356664</parameter>
+                <parameter name="Ki">0.6543869154510462</parameter>
+              </function>            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="167" name="bgr_malK_lamB_malM" type="unknown">
+          <InteractionType name="random_167">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorOneRepressorComp">
+                <parameter name="V0max">0.1</parameter>
+                <parameter name="V1max">5.0</parameter>
+                <parameter name="Ka">0.49768912722755915</parameter>
+                <parameter name="Ki">0.6160157866683889</parameter>
+                <parameter name="firstIsActivator">true</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="168" name="bgr_tdcABCDEFG" type="unknown">
+          <InteractionType name="random_168">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="NRegulatorsMM">
+                <parameter name="numReg">3</parameter>
+                <parameter name="V0max">0.2</parameter>
+                <parameter name="type">REPRESSOR</parameter>
+                <parameter name="Vmax">0.0</parameter>
+                <parameter name="Keq">0.5501150281072523</parameter>
+                <parameter name="type">ACTIVATOR</parameter>
+                <parameter name="Vmax">4.0</parameter>
+                <parameter name="Keq">0.6056819362909914</parameter>
+                <parameter name="type">ACTIVATOR</parameter>
+                <parameter name="Vmax">4.0</parameter>
+                <parameter name="Keq">0.6371826280459588</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="169" name="bgr_metT_leuW_glnUW_metU_glnVX" type="unknown">
+          <InteractionType name="random_169">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">2.0</parameter>
+                <parameter name="Kh">0.7111378001437714</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="170" name="bgr_osmE" type="unknown">
+          <InteractionType name="random_170">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">1.0701877166620974</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="171" name="bgr_dnaKJ" type="unknown">
+          <InteractionType name="random_171">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.43453669475619194</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="172" name="bgr_clpP" type="unknown">
+          <InteractionType name="random_172">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">2.0</parameter>
+                <parameter name="Kh">0.7332025871088582</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="173" name="bgr_hflB" type="unknown">
+          <InteractionType name="random_173">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.7471120775367627</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="174" name="bgr_nrdAB" type="unknown">
+          <InteractionType name="random_174">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="NRepressorsMM">
+                <parameter name="numReg">2</parameter>
+                <parameter name="V0max">4.0</parameter>
+                <parameter name="Ki">0.9448794970847364</parameter>
+                <parameter name="Ki">0.7321823542346874</parameter>
+              </function>            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="175" name="bgr_tyrTV" type="unknown">
+          <InteractionType name="random_175">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.5111149375251061</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="176" name="bgr_aspV" type="unknown">
+          <InteractionType name="random_176">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.7999019963467238</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="177" name="bgr_glcDEFGB" type="unknown">
+          <InteractionType name="random_177">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorOneRepressorComp">
+                <parameter name="V0max">0.1</parameter>
+                <parameter name="V1max">5.0</parameter>
+                <parameter name="Ka">0.636204605137466</parameter>
+                <parameter name="Ki">0.9229115194803373</parameter>
+                <parameter name="firstIsActivator">true</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="178" name="bgr_glcC" type="unknown">
+          <InteractionType name="random_178">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean type="ConstantModel">
+              <constant>0.5775857209227979</constant>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="179" name="bgr_narK" type="unknown">
+          <InteractionType name="random_179">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="NRegulatorsMM">
+                <parameter name="numReg">3</parameter>
+                <parameter name="V0max">0.2</parameter>
+                <parameter name="type">REPRESSOR</parameter>
+                <parameter name="Vmax">0.0</parameter>
+                <parameter name="Keq">0.9908207342494552</parameter>
+                <parameter name="type">REPRESSOR</parameter>
+                <parameter name="Vmax">0.0</parameter>
+                <parameter name="Keq">0.6208525672431926</parameter>
+                <parameter name="type">ACTIVATOR</parameter>
+                <parameter name="Vmax">4.0</parameter>
+                <parameter name="Keq">0.6418900631427975</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="180" name="bgr_mglBAC" type="unknown">
+          <InteractionType name="random_180">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneRepressorCoop">
+                <parameter name="V0max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.5017817279868134</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="181" name="bgr_arcA" type="unknown">
+          <InteractionType name="random_181">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.6304967702901919</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="182" name="bgr_dcuB_fumB" type="unknown">
+          <InteractionType name="random_182">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="NRegulatorsMM">
+                <parameter name="numReg">3</parameter>
+                <parameter name="V0max">0.2</parameter>
+                <parameter name="type">REPRESSOR</parameter>
+                <parameter name="Vmax">0.0</parameter>
+                <parameter name="Keq">0.5499763569991102</parameter>
+                <parameter name="type">ACTIVATOR</parameter>
+                <parameter name="Vmax">4.0</parameter>
+                <parameter name="Keq">0.7501737071321821</parameter>
+                <parameter name="type">ACTIVATOR</parameter>
+                <parameter name="Vmax">4.0</parameter>
+                <parameter name="Keq">0.8687897001858286</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="183" name="bgr_ompR_envZ" type="unknown">
+          <InteractionType name="random_183">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.7595309397001955</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="184" name="bgr_fliDST" type="unknown">
+          <InteractionType name="random_184">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.7937347166006876</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="185" name="bgr_uhpT" type="unknown">
+          <InteractionType name="random_185">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.8366015641958247</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="186" name="bgr_yiaKLMNOPQRS" type="unknown">
+          <InteractionType name="random_186">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.7683855431168167</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="187" name="bgr_argU" type="unknown">
+          <InteractionType name="random_187">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneRepressorCoop">
+                <parameter name="V0max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.6219328041689761</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="188" name="bgr_ptsHI_crr" type="unknown">
+          <InteractionType name="random_188">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="TwoActivatorsSynergism">
+                <parameter name="V0max">0.1</parameter>
+                <parameter name="V1max">1.0</parameter>
+                <parameter name="V2max">1.0</parameter>
+                <parameter name="K1a">0.768710266901202</parameter>
+                <parameter name="K2a">0.6766188656432606</parameter>
+                <parameter name="beta">1.0</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="189" name="bgr_pspABCDE" type="unknown">
+          <InteractionType name="random_189">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">4.0</parameter>
+                <parameter name="Kh">0.7465889205320216</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="190" name="bgr_fixABCX" type="unknown">
+          <InteractionType name="random_190">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="NRepressorsMM">
+                <parameter name="numReg">2</parameter>
+                <parameter name="V0max">4.0</parameter>
+                <parameter name="Ki">0.49685316771148647</parameter>
+                <parameter name="Ki">0.49279238930390323</parameter>
+              </function>            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="191" name="bgr_nagBACD" type="unknown">
+          <InteractionType name="random_191">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneRepressorCoop">
+                <parameter name="V0max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.6487368923869233</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="192" name="bgr_fliE" type="unknown">
+          <InteractionType name="random_192">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneRepressorCoop">
+                <parameter name="V0max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.4523036982039909</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="193" name="bgr_serT" type="unknown">
+          <InteractionType name="random_193">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorCoop">
+                <parameter name="V0max">0.0</parameter>
+                <parameter name="V1max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">1.0826040509442305</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="194" name="bgr_gyrA" type="unknown">
+          <InteractionType name="random_194">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneRepressorCoop">
+                <parameter name="V0max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.6248977930860853</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="195" name="bgr_rcsAB" type="unknown">
+          <InteractionType name="random_195">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneRepressorCoop">
+                <parameter name="V0max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.3336149377520956</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="196" name="bgr_entCEBA" type="unknown">
+          <InteractionType name="random_196">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneRepressorCoop">
+                <parameter name="V0max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.8683906044711879</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="197" name="bgr_cyoABCDE" type="unknown">
+          <InteractionType name="random_197">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorOneRepressorNoComp">
+                <parameter name="V0max">0.1</parameter>
+                <parameter name="V1max">5.0</parameter>
+                <parameter name="Ka">0.7453987965948177</parameter>
+                <parameter name="Ki">0.7309013427570936</parameter>
+                <parameter name="firstIsActivator">false</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="198" name="bgr_araC" type="unknown">
+          <InteractionType name="random_198">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneRepressorCoop">
+                <parameter name="V0max">0.5</parameter>
+                <parameter name="Hillconstant">1.0</parameter>
+                <parameter name="Kh">0.6069653610873552</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+    <Node id="199" name="bgr_icdA" type="unknown">
+          <InteractionType name="random_199">
+            <ProbabilityModel type="LognormalNoise">
+            <parameter name="stddev">0.1</parameter>
+            <IProvideMean>
+              <function name="OneActivatorOneRepressorNoComp">
+                <parameter name="V0max">0.1</parameter>
+                <parameter name="V1max">5.0</parameter>
+                <parameter name="Ka">0.5871167216270604</parameter>
+                <parameter name="Ki">0.5798785524160229</parameter>
+                <parameter name="firstIsActivator">true</parameter>
+              </function>
+            </IProvideMean>
+            </ProbabilityModel>
+      </InteractionType>
+    </Node>
+  </Nodes>
+  <Edges>
+    <Edge>
+      <from>1</from>
+      <to>0</to>
+    </Edge>
+    <Edge>
+      <from>1</from>
+      <to>2</to>
+    </Edge>
+    <Edge>
+      <from>1</from>
+      <to>3</to>
+    </Edge>
+    <Edge>
+      <from>1</from>
+      <to>5</to>
+    </Edge>
+    <Edge>
+      <from>1</from>
+      <to>20</to>
+    </Edge>
+    <Edge>
+      <from>1</from>
+      <to>29</to>
+    </Edge>
+    <Edge>
+      <from>1</from>
+      <to>51</to>
+    </Edge>
+    <Edge>
+      <from>1</from>
+      <to>81</to>
+    </Edge>
+    <Edge>
+      <from>1</from>
+      <to>83</to>
+    </Edge>
+    <Edge>
+      <from>1</from>
+      <to>85</to>
+    </Edge>
+    <Edge>
+      <from>4</from>
+      <to>1</to>
+    </Edge>
+    <Edge>
+      <from>4</from>
+      <to>4</to>
+    </Edge>
+    <Edge>
+      <from>4</from>
+      <to>6</to>
+    </Edge>
+    <Edge>
+      <from>4</from>
+      <to>7</to>
+    </Edge>
+    <Edge>
+      <from>4</from>
+      <to>8</to>
+    </Edge>
+    <Edge>
+      <from>4</from>
+      <to>11</to>
+    </Edge>
+    <Edge>
+      <from>4</from>
+      <to>12</to>
+    </Edge>
+    <Edge>
+      <from>4</from>
+      <to>24</to>
+    </Edge>
+    <Edge>
+      <from>4</from>
+      <to>32</to>
+    </Edge>
+    <Edge>
+      <from>4</from>
+      <to>39</to>
+    </Edge>
+    <Edge>
+      <from>4</from>
+      <to>55</to>
+    </Edge>
+    <Edge>
+      <from>4</from>
+      <to>61</to>
+    </Edge>
+    <Edge>
+      <from>4</from>
+      <to>90</to>
+    </Edge>
+    <Edge>
+      <from>4</from>
+      <to>97</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>1</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>9</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>10</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>13</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>15</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>16</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>17</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>18</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>19</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>21</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>22</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>23</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>25</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>26</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>27</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>28</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>30</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>31</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>35</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>36</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>38</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>40</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>41</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>42</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>43</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>48</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>49</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>56</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>59</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>60</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>62</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>63</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>64</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>65</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>67</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>70</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>71</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>73</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>74</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>76</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>82</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>84</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>88</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>98</to>
+    </Edge>
+    <Edge>
+      <from>9</from>
+      <to>99</to>
+    </Edge>
+    <Edge>
+      <from>14</from>
+      <to>1</to>
+    </Edge>
+    <Edge>
+      <from>21</from>
+      <to>21</to>
+    </Edge>
+    <Edge>
+      <from>21</from>
+      <to>76</to>
+    </Edge>
+    <Edge>
+      <from>25</from>
+      <to>16</to>
+    </Edge>
+    <Edge>
+      <from>25</from>
+      <to>25</to>
+    </Edge>
+    <Edge>
+      <from>25</from>
+      <to>33</to>
+    </Edge>
+    <Edge>
+      <from>25</from>
+      <to>34</to>
+    </Edge>
+    <Edge>
+      <from>25</from>
+      <to>37</to>
+    </Edge>
+    <Edge>
+      <from>25</from>
+      <to>53</to>
+    </Edge>
+    <Edge>
+      <from>25</from>
+      <to>94</to>
+    </Edge>
+    <Edge>
+      <from>27</from>
+      <to>27</to>
+    </Edge>
+    <Edge>
+      <from>28</from>
+      <to>28</to>
+    </Edge>
+    <Edge>
+      <from>28</from>
+      <to>67</to>
+    </Edge>
+    <Edge>
+      <from>33</from>
+      <to>33</to>
+    </Edge>
+    <Edge>
+      <from>42</from>
+      <to>10</to>
+    </Edge>
+    <Edge>
+      <from>42</from>
+      <to>19</to>
+    </Edge>
+    <Edge>
+      <from>42</from>
+      <to>22</to>
+    </Edge>
+    <Edge>
+      <from>42</from>
+      <to>42</to>
+    </Edge>
+    <Edge>
+      <from>44</from>
+      <to>40</to>
+    </Edge>
+    <Edge>
+      <from>44</from>
+      <to>43</to>
+    </Edge>
+    <Edge>
+      <from>44</from>
+      <to>44</to>
+    </Edge>
+    <Edge>
+      <from>44</from>
+      <to>47</to>
+    </Edge>
+    <Edge>
+      <from>44</from>
+      <to>50</to>
+    </Edge>
+    <Edge>
+      <from>44</from>
+      <to>52</to>
+    </Edge>
+    <Edge>
+      <from>44</from>
+      <to>54</to>
+    </Edge>
+    <Edge>
+      <from>44</from>
+      <to>59</to>
+    </Edge>
+    <Edge>
+      <from>44</from>
+      <to>60</to>
+    </Edge>
+    <Edge>
+      <from>44</from>
+      <to>63</to>
+    </Edge>
+    <Edge>
+      <from>44</from>
+      <to>66</to>
+    </Edge>
+    <Edge>
+      <from>44</from>
+      <to>68</to>
+    </Edge>
+    <Edge>
+      <from>44</from>
+      <to>75</to>
+    </Edge>
+    <Edge>
+      <from>44</from>
+      <to>88</to>
+    </Edge>
+    <Edge>
+      <from>44</from>
+      <to>89</to>
+    </Edge>
+    <Edge>
+      <from>44</from>
+      <to>93</to>
+    </Edge>
+    <Edge>
+      <from>44</from>
+      <to>99</to>
+    </Edge>
+    <Edge>
+      <from>45</from>
+      <to>34</to>
+    </Edge>
+    <Edge>
+      <from>45</from>
+      <to>45</to>
+    </Edge>
+    <Edge>
+      <from>45</from>
+      <to>47</to>
+    </Edge>
+    <Edge>
+      <from>45</from>
+      <to>60</to>
+    </Edge>
+    <Edge>
+      <from>45</from>
+      <to>63</to>
+    </Edge>
+    <Edge>
+      <from>45</from>
+      <to>66</to>
+    </Edge>
+    <Edge>
+      <from>45</from>
+      <to>68</to>
+    </Edge>
+    <Edge>
+      <from>45</from>
+      <to>69</to>
+    </Edge>
+    <Edge>
+      <from>45</from>
+      <to>70</to>
+    </Edge>
+    <Edge>
+      <from>45</from>
+      <to>78</to>
+    </Edge>
+    <Edge>
+      <from>45</from>
+      <to>87</to>
+    </Edge>
+    <Edge>
+      <from>46</from>
+      <to>1</to>
+    </Edge>
+    <Edge>
+      <from>46</from>
+      <to>13</to>
+    </Edge>
+    <Edge>
+      <from>46</from>
+      <to>23</to>
+    </Edge>
+    <Edge>
+      <from>46</from>
+      <to>36</to>
+    </Edge>
+    <Edge>
+      <from>46</from>
+      <to>73</to>
+    </Edge>
+    <Edge>
+      <from>52</from>
+      <to>34</to>
+    </Edge>
+    <Edge>
+      <from>52</from>
+      <to>50</to>
+    </Edge>
+    <Edge>
+      <from>52</from>
+      <to>58</to>
+    </Edge>
+    <Edge>
+      <from>52</from>
+      <to>60</to>
+    </Edge>
+    <Edge>
+      <from>52</from>
+      <to>64</to>
+    </Edge>
+    <Edge>
+      <from>52</from>
+      <to>68</to>
+    </Edge>
+    <Edge>
+      <from>52</from>
+      <to>69</to>
+    </Edge>
+    <Edge>
+      <from>52</from>
+      <to>75</to>
+    </Edge>
+    <Edge>
+      <from>52</from>
+      <to>77</to>
+    </Edge>
+    <Edge>
+      <from>52</from>
+      <to>88</to>
+    </Edge>
+    <Edge>
+      <from>52</from>
+      <to>93</to>
+    </Edge>
+    <Edge>
+      <from>57</from>
+      <to>47</to>
+    </Edge>
+    <Edge>
+      <from>57</from>
+      <to>54</to>
+    </Edge>
+    <Edge>
+      <from>57</from>
+      <to>59</to>
+    </Edge>
+    <Edge>
+      <from>57</from>
+      <to>60</to>
+    </Edge>
+    <Edge>
+      <from>57</from>
+      <to>68</to>
+    </Edge>
+    <Edge>
+      <from>57</from>
+      <to>72</to>
+    </Edge>
+    <Edge>
+      <from>57</from>
+      <to>89</to>
+    </Edge>
+    <Edge>
+      <from>57</from>
+      <to>99</to>
+    </Edge>
+    <Edge>
+      <from>58</from>
+      <to>77</to>
+    </Edge>
+    <Edge>
+      <from>63</from>
+      <to>63</to>
+    </Edge>
+    <Edge>
+      <from>71</from>
+      <to>31</to>
+    </Edge>
+    <Edge>
+      <from>71</from>
+      <to>56</to>
+    </Edge>
+    <Edge>
+      <from>71</from>
+      <to>84</to>
+    </Edge>
+    <Edge>
+      <from>79</from>
+      <to>54</to>
+    </Edge>
+    <Edge>
+      <from>79</from>
+      <to>59</to>
+    </Edge>
+    <Edge>
+      <from>80</from>
+      <to>11</to>
+    </Edge>
+    <Edge>
+      <from>80</from>
+      <to>39</to>
+    </Edge>
+    <Edge>
+      <from>80</from>
+      <to>80</to>
+    </Edge>
+    <Edge>
+      <from>82</from>
+      <to>82</to>
+    </Edge>
+    <Edge>
+      <from>86</from>
+      <to>23</to>
+    </Edge>
+    <Edge>
+      <from>86</from>
+      <to>36</to>
+    </Edge>
+    <Edge>
+      <from>86</from>
+      <to>73</to>
+    </Edge>
+    <Edge>
+      <from>91</from>
+      <to>15</to>
+    </Edge>
+    <Edge>
+      <from>91</from>
+      <to>50</to>
+    </Edge>
+    <Edge>
+      <from>91</from>
+      <to>69</to>
+    </Edge>
+    <Edge>
+      <from>92</from>
+      <to>34</to>
+    </Edge>
+    <Edge>
+      <from>92</from>
+      <to>92</to>
+    </Edge>
+    <Edge>
+      <from>92</from>
+      <to>96</to>
+    </Edge>
+    <Edge>
+      <from>95</from>
+      <to>34</to>
+    </Edge>
+    <Edge>
+      <from>95</from>
+      <to>95</to>
+    </Edge>
+    <Edge>
+      <from>95</from>
+      <to>96</to>
+    </Edge>
+    <Edge>
+      <from>99</from>
+      <to>65</to>
+    </Edge>
+    <Edge>
+      <from>99</from>
+      <to>70</to>
+    </Edge>
+    <Edge>
+      <from>100</from>
+      <to>101</to>
+    </Edge>
+    <Edge>
+      <from>100</from>
+      <to>102</to>
+    </Edge>
+    <Edge>
+      <from>100</from>
+      <to>104</to>
+    </Edge>
+    <Edge>
+      <from>100</from>
+      <to>105</to>
+    </Edge>
+    <Edge>
+      <from>103</from>
+      <to>102</to>
+    </Edge>
+    <Edge>
+      <from>103</from>
+      <to>105</to>
+    </Edge>
+    <Edge>
+      <from>103</from>
+      <to>107</to>
+    </Edge>
+    <Edge>
+      <from>103</from>
+      <to>110</to>
+    </Edge>
+    <Edge>
+      <from>103</from>
+      <to>111</to>
+    </Edge>
+    <Edge>
+      <from>103</from>
+      <to>113</to>
+    </Edge>
+    <Edge>
+      <from>103</from>
+      <to>159</to>
+    </Edge>
+    <Edge>
+      <from>106</from>
+      <to>105</to>
+    </Edge>
+    <Edge>
+      <from>106</from>
+      <to>136</to>
+    </Edge>
+    <Edge>
+      <from>106</from>
+      <to>166</to>
+    </Edge>
+    <Edge>
+      <from>106</from>
+      <to>168</to>
+    </Edge>
+    <Edge>
+      <from>106</from>
+      <to>170</to>
+    </Edge>
+    <Edge>
+      <from>106</from>
+      <to>177</to>
+    </Edge>
+    <Edge>
+      <from>106</from>
+      <to>179</to>
+    </Edge>
+    <Edge>
+      <from>106</from>
+      <to>183</to>
+    </Edge>
+    <Edge>
+      <from>106</from>
+      <to>189</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>107</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>113</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>115</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>117</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>119</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>120</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>121</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>126</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>127</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>128</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>129</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>131</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>133</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>134</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>136</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>137</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>139</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>140</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>144</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>147</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>151</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>152</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>154</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>156</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>157</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>159</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>160</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>161</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>162</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>165</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>167</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>168</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>180</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>182</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>185</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>186</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>188</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>190</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>191</to>
+    </Edge>
+    <Edge>
+      <from>108</from>
+      <to>198</to>
+    </Edge>
+    <Edge>
+      <from>109</from>
+      <to>107</to>
+    </Edge>
+    <Edge>
+      <from>109</from>
+      <to>142</to>
+    </Edge>
+    <Edge>
+      <from>109</from>
+      <to>143</to>
+    </Edge>
+    <Edge>
+      <from>109</from>
+      <to>145</to>
+    </Edge>
+    <Edge>
+      <from>109</from>
+      <to>146</to>
+    </Edge>
+    <Edge>
+      <from>109</from>
+      <to>148</to>
+    </Edge>
+    <Edge>
+      <from>109</from>
+      <to>149</to>
+    </Edge>
+    <Edge>
+      <from>109</from>
+      <to>156</to>
+    </Edge>
+    <Edge>
+      <from>109</from>
+      <to>159</to>
+    </Edge>
+    <Edge>
+      <from>109</from>
+      <to>169</to>
+    </Edge>
+    <Edge>
+      <from>109</from>
+      <to>174</to>
+    </Edge>
+    <Edge>
+      <from>109</from>
+      <to>175</to>
+    </Edge>
+    <Edge>
+      <from>109</from>
+      <to>176</to>
+    </Edge>
+    <Edge>
+      <from>109</from>
+      <to>187</to>
+    </Edge>
+    <Edge>
+      <from>109</from>
+      <to>193</to>
+    </Edge>
+    <Edge>
+      <from>112</from>
+      <to>111</to>
+    </Edge>
+    <Edge>
+      <from>112</from>
+      <to>132</to>
+    </Edge>
+    <Edge>
+      <from>112</from>
+      <to>133</to>
+    </Edge>
+    <Edge>
+      <from>112</from>
+      <to>137</to>
+    </Edge>
+    <Edge>
+      <from>112</from>
+      <to>195</to>
+    </Edge>
+    <Edge>
+      <from>114</from>
+      <to>113</to>
+    </Edge>
+    <Edge>
+      <from>114</from>
+      <to>137</to>
+    </Edge>
+    <Edge>
+      <from>114</from>
+      <to>144</to>
+    </Edge>
+    <Edge>
+      <from>114</from>
+      <to>156</to>
+    </Edge>
+    <Edge>
+      <from>114</from>
+      <to>166</to>
+    </Edge>
+    <Edge>
+      <from>114</from>
+      <to>168</to>
+    </Edge>
+    <Edge>
+      <from>114</from>
+      <to>179</to>
+    </Edge>
+    <Edge>
+      <from>114</from>
+      <to>181</to>
+    </Edge>
+    <Edge>
+      <from>114</from>
+      <to>182</to>
+    </Edge>
+    <Edge>
+      <from>114</from>
+      <to>197</to>
+    </Edge>
+    <Edge>
+      <from>114</from>
+      <to>199</to>
+    </Edge>
+    <Edge>
+      <from>115</from>
+      <to>124</to>
+    </Edge>
+    <Edge>
+      <from>115</from>
+      <to>158</to>
+    </Edge>
+    <Edge>
+      <from>115</from>
+      <to>196</to>
+    </Edge>
+    <Edge>
+      <from>116</from>
+      <to>112</to>
+    </Edge>
+    <Edge>
+      <from>116</from>
+      <to>194</to>
+    </Edge>
+    <Edge>
+      <from>118</from>
+      <to>117</to>
+    </Edge>
+    <Edge>
+      <from>118</from>
+      <to>160</to>
+    </Edge>
+    <Edge>
+      <from>121</from>
+      <to>125</to>
+    </Edge>
+    <Edge>
+      <from>121</from>
+      <to>153</to>
+    </Edge>
+    <Edge>
+      <from>121</from>
+      <to>164</to>
+    </Edge>
+    <Edge>
+      <from>121</from>
+      <to>171</to>
+    </Edge>
+    <Edge>
+      <from>121</from>
+      <to>172</to>
+    </Edge>
+    <Edge>
+      <from>121</from>
+      <to>173</to>
+    </Edge>
+    <Edge>
+      <from>122</from>
+      <to>121</to>
+    </Edge>
+    <Edge>
+      <from>122</from>
+      <to>174</to>
+    </Edge>
+    <Edge>
+      <from>123</from>
+      <to>121</to>
+    </Edge>
+    <Edge>
+      <from>123</from>
+      <to>129</to>
+    </Edge>
+    <Edge>
+      <from>123</from>
+      <to>157</to>
+    </Edge>
+    <Edge>
+      <from>130</from>
+      <to>129</to>
+    </Edge>
+    <Edge>
+      <from>130</from>
+      <to>157</to>
+    </Edge>
+    <Edge>
+      <from>132</from>
+      <to>150</to>
+    </Edge>
+    <Edge>
+      <from>132</from>
+      <to>163</to>
+    </Edge>
+    <Edge>
+      <from>132</from>
+      <to>184</to>
+    </Edge>
+    <Edge>
+      <from>132</from>
+      <to>192</to>
+    </Edge>
+    <Edge>
+      <from>133</from>
+      <to>132</to>
+    </Edge>
+    <Edge>
+      <from>135</from>
+      <to>134</to>
+    </Edge>
+    <Edge>
+      <from>137</from>
+      <to>190</to>
+    </Edge>
+    <Edge>
+      <from>138</from>
+      <to>137</to>
+    </Edge>
+    <Edge>
+      <from>138</from>
+      <to>179</to>
+    </Edge>
+    <Edge>
+      <from>138</from>
+      <to>182</to>
+    </Edge>
+    <Edge>
+      <from>141</from>
+      <to>140</to>
+    </Edge>
+    <Edge>
+      <from>141</from>
+      <to>165</to>
+    </Edge>
+    <Edge>
+      <from>141</from>
+      <to>188</to>
+    </Edge>
+    <Edge>
+      <from>155</from>
+      <to>154</to>
+    </Edge>
+    <Edge>
+      <from>165</from>
+      <to>167</to>
+    </Edge>
+    <Edge>
+      <from>178</from>
+      <to>177</to>
+    </Edge>
+    <Edge>
+      <from>181</from>
+      <to>197</to>
+    </Edge>
+    <Edge>
+      <from>181</from>
+      <to>199</to>
+    </Edge>
+  </Edges>
+  <Correlations>
+    <CorrelationPair source="4" target="1" slope="-1.0"/>
+    <CorrelationPair source="7" target="2" slope="-1.0"/>
+    <CorrelationPair source="11" target="3" slope="-1.0"/>
+    <CorrelationPair source="10" target="6" slope="-1.0"/>
+    <CorrelationPair source="5" target="8" slope="-1.0"/>
+    <CorrelationPair source="10" target="9" slope="-1.0"/>
+    <CorrelationNoise value="0.1"/>
+  </Correlations>
+</GeneNetwork>
