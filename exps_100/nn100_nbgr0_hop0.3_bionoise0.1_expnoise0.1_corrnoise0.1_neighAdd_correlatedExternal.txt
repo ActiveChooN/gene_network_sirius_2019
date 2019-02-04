@@ -1,6 +1,0 @@
-node rpoE_rseABC correlated with node cytR
-node fnr correlated with node himA
-node FruR correlated with node narL
-node deoR correlated with node yjdHG
-node soxS correlated with node cytR
-node dnaA correlated with node narL
