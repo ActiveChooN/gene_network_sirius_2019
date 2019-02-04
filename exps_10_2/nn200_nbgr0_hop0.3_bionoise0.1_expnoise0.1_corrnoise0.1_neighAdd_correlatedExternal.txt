@@ -1,0 +1,15 @@
+node gcvR correlated with node yjdHG
+node hns correlated with node yjdHG
+node glpR correlated with node yjdHG
+node lrp correlated with node rob
+node deoR correlated with node rob
+node nlpD_rpoS correlated with node ebgR
+node rpoE_rseABC correlated with node fadR
+node envY_ompT correlated with node cytR
+node evgA correlated with node cytR
+node mlc correlated with node rob
+node gntR correlated with node crp
+node glcC correlated with node fadR
+node uhpA correlated with node dnaA
+node FruR correlated with node himA
+node narL correlated with node soxS

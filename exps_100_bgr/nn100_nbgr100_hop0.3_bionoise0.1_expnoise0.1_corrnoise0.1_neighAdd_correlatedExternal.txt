@@ -1,0 +1,6 @@
+node cpxAR correlated with node cytR
+node fnr correlated with node marRAB
+node deoR correlated with node FruR
+node crp correlated with node himA
+node narL correlated with node FruR
+node dnaA correlated with node yjdHG
