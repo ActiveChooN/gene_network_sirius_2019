@@ -17,8 +17,8 @@ def xml_graph_to_adjacency_matrix(filename):
         target = int(e.getElementsByTagName('to')[0].firstChild.nodeValue)
         adjacency_matrix[source][target] = 1
         adjacency_matrix[target][source] = 1
-    print(adjacency_matrix)
+    return adjacency_matrix
 
 
 filename = '/home/user/Sirius/XMLparser/Graph.xml'
-xml_graph_to_adjacency_matrix(filename)
+print(xml_graph_to_adjacency_matrix(filename))
