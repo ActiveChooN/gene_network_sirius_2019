@@ -5,11 +5,25 @@ import numpy as np
 import xml.dom.minidom as md
 from sklearn.metrics import roc_curve, auc
 
-dirname = "/home/user/Sirius/MutualInformation_2"
-filename = dirname + "/experiment.txt"
-filename2 = dirname + "/XMLparser/Graph.xml"
+'''res = [[0.60372905 0.62657756 0.56825025 0.62948082 0.68960059 0.59300139
+  0.66541912 0.70009408 0.61183355]
+ [0.60213914 0.59547026 0.58100637 0.52582041 0.54694731 0.52462026
+  0.53027191 0.53841472 0.52438248]
+ [0.57805153 0.62058477 0.58254752 0.60767324 0.65879136 0.58630081
+  0.6214121  0.67315259 0.60500149]
+ [0.60383887 0.61852466 0.56976022 0.62400038 0.67456203 0.59577896
+  0.65409632 0.6837244  0.61136003]]'''
 
-def run_minet(filename=filename):
+
+datadirname = "/home/user/Sirius/MutualInformation_2/MI/Data"
+datafilename = datadirname + "/{0}/{0}_data.txt"
+graphfilename = datadirname + "/{0}/{0}_graph.xml"
+
+algolist = ['clr', 'aracne', 'mrnet', 'mrnetb']
+
+datalist = ['exps_10', 'exps_10_2', 'exps_10_bgr', 'exps_50', 'exps_50_2', 'exps_50_bgr', 'exps_100', 'exps_100_2', 'exps_100_bgr']
+
+def run_minet(filename, algo):
 
     rn.activate()
 
@@ -22,7 +36,7 @@ def run_minet(filename=filename):
 
     mim <- build.mim(d, estimator = "mi.empirical", disc = "equalfreq")
 
-    weight_adjacency_matrix <- minet(mim, method="mrnetb", estimator="mi.empirical", disc="equalfreq");
+    weight_adjacency_matrix <- minet(mim, method='""" + algo + """', estimator="mi.empirical", disc="equalfreq");
 
     weight_adjacency_matrix;
     """
@@ -36,7 +50,7 @@ def run_minet(filename=filename):
 
 
 
-def xml_graph_to_adjacency_matrix(filename=filename2):
+def xml_graph_to_adjacency_matrix(filename):
     dom = md.parse(filename)
 
     # print(dom.toprettyxml())
@@ -53,12 +67,18 @@ def xml_graph_to_adjacency_matrix(filename=filename2):
         adjacency_matrix[target][source] = 1
     return adjacency_matrix
 
+aucs = np.zeros(shape=(len(algolist), len(datalist)))
 
-long_array = run_minet()
-true_matrix = xml_graph_to_adjacency_matrix()
-true_array = true_matrix[np.triu_indices(true_matrix.shape[0])]
+for i, algo in enumerate(algolist):
 
-fpr, tpr, thresholds = roc_curve(true_array, long_array)
-roc_auc = auc(fpr, tpr)
+    for j, dataname in enumerate(datalist):
 
-print(roc_auc)
+        long_array = run_minet(datafilename.format(dataname), algo)
+        true_matrix = xml_graph_to_adjacency_matrix(graphfilename.format(dataname))
+        true_array = true_matrix[np.triu_indices(true_matrix.shape[0])]
+
+        fpr, tpr, thresholds = roc_curve(true_array, long_array)
+        roc_auc = auc(fpr, tpr)
+        aucs[i][j] = roc_auc
+
+print(aucs)
